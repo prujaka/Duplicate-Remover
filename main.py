@@ -1,10 +1,11 @@
 from DuplicateRemover import DuplicateRemover
 
-dirname = "images"
+dirname = "img"
 
 # Remove Duplicates
 dr = DuplicateRemover(dirname)
-dr.find_duplicates()
+# dr.find_duplicates()
 
 # Find Similar Images
-dr.find_similar("IMG-20110704-00007.jpg",70)
+folder = "/Users/sergey/work/lewagon/spotify-project/data/spectrograms"
+dr.find_similar(folder + "/006363.png", 95)
